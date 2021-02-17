@@ -29,3 +29,8 @@ This is the front-end for the todo list app created with react. It was created t
 - https://reactjs.org/tutorial/tutorial.html
 - class videos
 - https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
+
+# Questions
+- What is a serviceworker?
+  - Is it similar to a worker from a worker pool in multi-threading/concurrent programming?
+- Why does using a serviceworker in Index.js break the application?

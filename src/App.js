@@ -29,7 +29,7 @@ const todoItems = [
   },
 ];
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,15 +66,33 @@ class App extends Component {
         <span className={`todo-title mr-2 ${this.state.viewCompleted ? "completed-todo" : ""}`} title={item.description}>
           {item.title}
         </span>
+        <span>
+            <button className="btn btn-secondary mr-2"> Edit </button>
+            <button className="btn btn-danger">Delete </button>
+        </span>
       </li>
     ));
   };
   render() {
     return (
-      <div>
-      </div>
+      <main className="content">
+        <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
+        <div className="row ">
+          <div className="col-md-6 col-sm-10 mx-auto p-0">
+            <div className="card p-3">
+              <div className="">
+                <button className="btn btn-primary">Add task</button>
+              </div>
+              {this.renderTabList()}
+              <ul className="list-group list-group-flush">
+                {this.renderItems()}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
     );
   }
 }
 
-export default App;
+// export default App;
