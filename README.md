@@ -25,12 +25,17 @@ This is the front-end for the todo list app created with react. It was created t
 - Create automated unit tests
 
 
-# Inspiration
+# Inspiration/help
 - https://reactjs.org/tutorial/tutorial.html
 - class videos
 - https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
+- https://www.w3schools.com/js/js_json_stringify.asp
+- https://www.codecademy.com/learn/react-101 (nearly finished)
 
 # Questions
 - What is a serviceworker?
   - Is it similar to a worker from a worker pool in multi-threading/concurrent programming?
 - Why does using a serviceworker in Index.js break the application?
+- Why didn't we use constructors in class?
+- What are the pros/cons of class-based vs hook-based react development?
+- Is there any advantage to using javascripts "..." (Ellipsis) spread/rest functionality?
